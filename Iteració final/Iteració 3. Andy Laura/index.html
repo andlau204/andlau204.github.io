@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Galeria d’Imatges</title>
+        <style>
+           
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+          
+            header {
+                background-color: blue;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                box-shadow: 0 1px 2.5px rgba(0, 0, 0, 0.15);
+            }
+    
+           
+            main {
+                margin-top: 60px;
+                padding: 20px;
+            }
+    
+           
+            .galeria {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+            }
+    
+            
+            .imatge {
+                border: 1px solid blue;
+                border-radius: 8px;
+                overflow: hidden;
+                width: 300px;
+                height: auto;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                position: relative;
+                
+            }
+    
+           
+            .imatge img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+    
+            .imatge .info {
+                position: absolute;
+                bottom: 0;
+                background-color: rgba(0, 123, 255, 0.8);
+                color: white;
+                padding: 10px;
+                width: 100%;
+                text-align: center;
+            }
+    
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Galeria d’Imatges</h1>
+        </header>
+        <main>
+            <div class="galeria">
+                <div class="imatge">
+                    <img src="https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2024/05/30/asi-es-el-balon-oficial-de-la-final-de-la-champions-league-2024.jpeg" alt="Imatge 1">
+                    <div class="info">Imatge 1</div>
+                </div>
+                <div class="imatge">
+                    <img src="https://vivabasquet.com/wp-content/uploads/2024/01/ball.png" alt="Imatge 2">
+                    <div class="info">Imatge 2</div>
+                </div>
+                <div class="imatge">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2L5sSBaVfj5l9kBccSvgY9jeDKL256r9Nfg&s" alt="Imatge 3">
+                    <div class="info">Imatge 3</div>
+                </div>
+                <div class="imatge">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7F8lxvCvzCqmsdyV1LeWEJroMqf0afaU2fw&s" alt="Imatge 4">
+                    <div class="info">Imatge 4</div>
+                </div>
+                <div class="imatge">
+                    <img src="https://img.rtve.es/imagenes/consejos-viajar-avion-ahorrar/1634194794236.jpg" alt="Imatge 5">
+                    <div class="info">Imatge 5</div>
+                </div>
+                <div class="imatge">
+                    <img src="https://plantillasdeportivas.es/wp-content/uploads/2018/11/tenis-1600x982.jpg" alt="Imatge 6">
+                    <div class="info">Imatge 6</div>
+                </div>
+                <div class="imatge">
+                    <img src="https://noticias.coches.com/wp-content/uploads/2020/03/Mercedes-VIto-Tourer-2020-21.jpg" alt="Imatge 7">
+                    <div class="info">Imatge 7</div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
+    
+     
+    

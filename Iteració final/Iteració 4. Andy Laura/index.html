@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="CA">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulari Nou Treballador</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: white;
+                color: #333;
+            }
+    
+            h1 {
+                text-align: center;
+                color: green;
+            }
+    
+            form {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+                max-width: 700px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+    
+            label {
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+    
+            input, select, textarea {
+                padding: 8px;
+                font-size: 1rem;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                width: 100%;
+            }
+    
+            textarea {
+                resize: vertical;
+                grid-column: span 2;
+                height: 100px;
+            }
+    
+            .form-group {
+                display: flex;
+                flex-direction: column;
+            }
+    
+            .form-group.radio {
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+            }
+    
+            .form-group.checkbox {
+                grid-column: span 2;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+    
+            input[type="submit"] {
+                grid-column: span 2;
+                background-color: green;
+                color: white;
+                padding: 10px;
+                font-size: 1.2rem;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+    
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+    
+        </style>
+    </head>
+    <body>
+        <h1>Formulari de Selecció de Treballador</h1>
+        <form action="https://alumnat.cat/form" method="POST">
+            <div class="form-group">
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom" placeholder="Nom" required>
+            </div>
+            <br>
+            <div class="form-group">
+            <label for="cognoms">Cognoms</label>
+            <input type="text" name="cognoms" id="cognoms" placeholder="Cognoms" required>
+            </div>
+            <br>
+            <div class="form-group">
+            <label for="edat">Edat</label>
+            <input type="number" name="edat" id="edat" placeholder="Edat" required>
+            </div>
+            <br>
+            <div class="form-group">
+            <label for="dni">DNI</label>
+            <input type="text" name="dni" id="dni" placeholder="DNI" required>
+            </div>
+            <br>
+            <div class="form-group">  
+            <label id="color">Color preferit</label>
+            <input type="color" name="color" id="color" placeholder="Color preferit">
+            </div>   
+            <br>
+            <div class="form-group">
+            <label for="mail">Email</label>
+            <input type="email" id="mail" placeholder="usuari@domini" required>
+            </div>
+            <br>
+            <div class="form-group">
+            <label for="estudis">Estudis</label>
+            <select id="estudis" name="estudis" required>
+                <option value="primaria">Primaria</option>
+                <option value="secundaria">Secundaria</option>
+                <option value="batxillerat">Batxillerat</option>
+                <option value="universitari">Universitari</option>
+                <option value="postgrau">Postgrau</option>
+            </select>
+            </div>
+            <br>
+            <div class="form-group radio">
+            <span>Sexe:</span>
+            <label><input type="radio" name="sexe" value="home">Home</label>
+            <label><input type="radio" name="sexe" value="dona">Dona</label>
+            <label><input type="radio" name="sexe" value="altres">Altres</label>
+            </div>
+            <br>
+            <div class="form group">
+            <label for="explicació">Explicació</label>
+            <textarea id="explicació" name="explicació" placeholder="Explica perque t'agradaria treballar amb nosaltres"></textarea>
+            </div>
+            <br>
+            <div class="form group checkbox">
+            <label for="politica de privacitat">Politica de privacitat</label>
+            <input id="politica de privacitat" name="politica de privacitat">
+            </div>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>
